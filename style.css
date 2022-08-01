@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+/**
+* ! Generalist Styles
+**/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background: hsl(257, 40%, 49%);
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    /* border: 2px solid red; */
+    margin: 40px 30px;
+}
+
+.logo{
+    width: 45%;
+    margin-bottom: 70px;
+}
+
+
+h1{
+    margin: 20px 0px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+}
+
+.text-container p{
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: 'Open Sans',
+    sans-serif;
+    line-height: 1.7;
+    font-weight: 400;
+    color: white;
+}
+
+.showcase{
+    /* border: 2px solid yellow; */
+}
+
+.text-container{
+    /* border: 2px solid white; */
+}
+
+.register-btn{
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 26px;
+    padding: 7px 0px;
+    margin: 20px auto;
+    width: 72%;
+    font-size: 0.6rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.register-btn:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+i{
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.fa-facebook-f,
+.fa-instagram{
+    padding: 8px 10px !important ;
+}
+
+i:hover{
+    border: 2px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+
+@media (min-width:768px){
+
+    html{
+        font-size: 25px;
+    }
+
+    body{
+        background-image: url("./images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container{
+        display: flex;
+    }
+
+    .showcase{
+        flex: 55%;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .text-container{
+        padding: 0 20px;
+        margin-top: 12%;
+        flex: 45%;
+    }
+
+    h1{
+        text-align: left;
+    }
+
+    .text-container p{
+        text-align: left;
+    }
+
+    .register-btn{
+        margin: 30px 0;
+        width: 40%;
+    }
+
+    .social{
+        margin-top: 110px;
+        justify-content: flex-end;
+    }
+}
